@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 25vh);
+}
+
+/* main > * {
+    border: 1px solid black;
+} */
+
+section {
+    justify-content: center;
+    border: 1px solid black;
+}
+
+@media screen and (max-device-width : 480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: aquamarine;
+    }
+
+    section {
+        color: red;
+        text-align: center;
+    }
+    
+}
